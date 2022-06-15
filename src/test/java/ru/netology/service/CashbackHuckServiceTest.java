@@ -35,4 +35,14 @@ public class CashbackHuckServiceTest {
 
         assertEquals(actual, expected);
     }
+
+    @Test
+    public void testRemainIf1000() {
+        CashbackHuckService service = new CashbackHuckService();
+
+        int expected = 0;
+        int actual = service.remain(1000);
+
+        assertEquals(actual, expected);
+    }
 }
